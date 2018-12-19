@@ -8,6 +8,26 @@ namespace CoreTvShowCall.InternalModels
 
         public string Name { get; set; }
 
-        public DateTime? BirthDay { get; set; }
+        /// <summary>
+        /// Internal birthday values, should not be serialized by external libraries
+        /// </summary>
+        internal DateTime? BirthDayValue { get; set; }
+
+        public string BirthDay
+        {
+            get
+            {
+                if (BirthDayValue == null)
+                {
+                    return null;
+                }
+
+                return $"{BirthDayValue.Value.Year}-{BirthDayValue.Value.Month}-{BirthDayValue.Value.Day}";
+            }
+            set
+            {
+                //redundant but can be needed for external libraries
+            }
+        }
     }
 }

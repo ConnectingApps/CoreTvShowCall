@@ -17,7 +17,7 @@ namespace CoreTvShowCallTest
             var externalData = JsonConvert.DeserializeObject<RootObject>(fileContent);
             var internalData = DataMapper.MapToExternal(externalData);
             Assert.Equal(showName, internalData.Name);
-            Assert.Equal(yearOfBirthOfFirstPerson, internalData.Persons.First().BirthDay.Value.Year);
+            Assert.Equal(yearOfBirthOfFirstPerson, internalData.Persons.First().BirthDayValue.Value.Year);
         }
     }
 }
