@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTvShowCall", "CoreTvShowCall\CoreTvShowCall.csproj", "{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTvShowCallTest", "..\CoreTvShowCallTest\CoreTvShowCallTest.csproj", "{27173822-A795-4479-9246-39E31C3FD2C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreTvShowCallTest", "CoreTvShowCallTest\CoreTvShowCallTest.csproj", "{E583AB91-7713-4F20-B42A-348B15D2BD28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27173822-A795-4479-9246-39E31C3FD2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27173822-A795-4479-9246-39E31C3FD2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27173822-A795-4479-9246-39E31C3FD2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27173822-A795-4479-9246-39E31C3FD2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E583AB91-7713-4F20-B42A-348B15D2BD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E583AB91-7713-4F20-B42A-348B15D2BD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E583AB91-7713-4F20-B42A-348B15D2BD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E583AB91-7713-4F20-B42A-348B15D2BD28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
