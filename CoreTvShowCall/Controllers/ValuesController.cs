@@ -2,14 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CoreTvShowCall.InternalModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreTvShowCall.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class MazeController : ControllerBase
     {
+        private readonly IMazeService _mazeService;
+
+        public MazeController(IMazeService mazeService)
+        {
+            _mazeService = mazeService;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -19,9 +27,11 @@ namespace CoreTvShowCall.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<ActionResult<Show>> Get(int id)
         {
-            return "value";
+            var externalResult = await _mazeService.GetShowWithCast(id);
+            var internalModel = DataMapper.MapToExternal(externalResult);
+            return Ok(internalModel);
         }
 
         // POST api/values
