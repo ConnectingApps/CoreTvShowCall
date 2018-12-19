@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTvShowCall", "CoreTvShowCall\CoreTvShowCall.csproj", "{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTvShowCallTest", "..\CoreTvShowCallTest\CoreTvShowCallTest.csproj", "{27173822-A795-4479-9246-39E31C3FD2C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0585C87E-47C4-4D96-A0B0-8F7A2F31BDE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27173822-A795-4479-9246-39E31C3FD2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27173822-A795-4479-9246-39E31C3FD2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27173822-A795-4479-9246-39E31C3FD2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27173822-A795-4479-9246-39E31C3FD2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF1D67C8-63E6-4763-8DDF-3B3E29D3003B}
+	EndGlobalSection
+EndGlobal
