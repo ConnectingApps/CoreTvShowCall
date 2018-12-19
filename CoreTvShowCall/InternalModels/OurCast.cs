@@ -26,7 +26,12 @@ namespace CoreTvShowCall.InternalModels
             }
             set
             {
-                //redundant but can be needed for external libraries
+                if (string.IsNullOrEmpty(value))
+                {
+                    return;
+                }
+                var values = value.Split("-");
+                BirthDayValue = new DateTime(int.Parse(values[0]),int.Parse(values[1]),int.Parse(values[2]));
             }
         }
     }

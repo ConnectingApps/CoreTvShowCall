@@ -4,21 +4,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CoreTvShowCall
 {
-    public class StorageContext
+    public class StoreContext : DbContext
     {
-        public class StoreContext : DbContext
+        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         {
-            public StoreContext(DbContextOptions<StoreContext> options) : base(options)
-            {
-                Console.WriteLine("Context created");
-            }
+            Console.WriteLine("Context created");
+        }
 
-            public DbSet<ShowStore> ShowStores { get; set; }
+        public DbSet<ShowStore> ShowStores { get; set; }
 
-            protected override void OnModelCreating(ModelBuilder builder)
-            {
-                Console.WriteLine("OnModelCreating");
-            }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            Console.WriteLine("OnModelCreating");
         }
     }
 }
