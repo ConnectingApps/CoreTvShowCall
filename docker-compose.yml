@@ -1,8 +1,12 @@
 version: '3.4'
 
 services:
+  sql.data:
+    image: microsoft/mssql-server-linux:2017-latest
   coretvshowcall:
     image: ${DOCKER_REGISTRY-}coretvshowcall
     build:
       context: .
       dockerfile: CoreTvShowCall/Dockerfile
+    depends_on:
+      - sql.data

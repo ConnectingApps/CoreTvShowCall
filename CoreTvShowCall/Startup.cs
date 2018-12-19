@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
-using System.Reflection;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Polly;
 using Polly.Extensions.Http;
 using Swashbuckle.AspNetCore.Swagger;
+
 namespace CoreTvShowCall
 {
     public class Startup
@@ -40,8 +34,8 @@ namespace CoreTvShowCall
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "RetryFactory",
-                    Description = "A simple example of an ASP.NET Core Web API to show what the effect is of http client factory in .NET Core 2.1",
+                    Title = "CoreTvShowCall",
+                    Description = "",
                     Contact = new Contact
                     {
                         Name = "Daan Acohen, lead developer at connecting apps",
@@ -75,10 +69,7 @@ namespace CoreTvShowCall
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
             app.UseMvc();
             app.UseSwagger();
